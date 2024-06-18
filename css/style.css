@@ -130,7 +130,7 @@ button:hover {
 }
 
 .small-label {
-    font-size: 0.8em;
+    font-size: 0.7em;
     font-weight: bold;
     color: #d01b1b;
     display: inline-block; /* Mengubah tata letak label kecil menjadi inline-block */
