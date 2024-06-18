@@ -39,8 +39,8 @@ body {
 
 .card h1,
 .explanation-card h2 {
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 26px;
+    font-weight: 900;
     margin-bottom: 20px;
 }
 
@@ -81,14 +81,18 @@ button {
 
 button#convert-button {
     background-color: #007bff;
+    font-weight: bold;
 }
 
 button#reverse-convert-button {
-    background-color: #ffc107;
+    /* hijau */
+    background-color: #28a745;
+    font-weight: bold;
 }
 
 button#reset-button {
-    background-color: #dc3545;
+    background-color: #f0ad4e;
+    font-weight: bold;
 }
 
 button:hover {
