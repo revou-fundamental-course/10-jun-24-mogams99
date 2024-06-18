@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Suhu Online</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card-container">
+            <div class="card">
+                <h1>Konversi Suhu</h1>
+                <form id="conversion-form">
+                    <div class="form-group">
+                        <label for="temperature" class="main-label">Jumlah Suhu : </label>
+                        <span class="small-label">*satuan konversi yang dihasilkan akan sesuai dengan konversi yang anda pilih*</span>
+                        <input type="number" id="temperature" name="temperature" placeholder="- Masukkan Jumlah Suhu -"required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="button" id="convert-button">Konversi ke Fahrenheit</button>
+                        <button type="button" id="reverse-convert-button">Konversi ke Celsius</button>
+                        <button type="reset" id="reset-button">Reset</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="conversion-process">Proses Perhitungan :</label>
+                        <input type="text" id="conversion-process" readonly>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Card for Calculation Explanation -->
+            <div class="card explanation-card">
+                <h2>Penjelasan Perhitungan</h2>
+                <p><strong>Celsius ke Fahrenheit:</strong> Kalikan Celsius dengan 9/5 dan tambahkan 32.</p>
+                <p><strong>Fahrenheit ke Celsius:</strong> Kurangi 32 dari Fahrenheit dan kemudian kali dengan 5/9.</p>
+                <p>Rumus ini memungkinkan konversi antara skala suhu Celsius dan Fahrenheit.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
